@@ -1,0 +1,13 @@
+*{
+    background-color: black;
+    color: rgb(226, 226, 226);
+}
+#box{
+    background-color: rgb(89, 198, 162);
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+}
+h1{
+    x:10px;
+}
