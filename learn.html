@@ -1,70 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Krishna GSAP Landing</title>
-  <link rel="stylesheet" href="learn.css">
-
-  <!-- GSAP CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna GSAP Site</title>
+<link rel="stylesheet" href="learn.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 <body>
 
-  <nav>
-    <h2>Krishna</h2>
-    <a href="about.html">About</a>
-  </nav>
+<div class="loader">
+<h1>Welcome Krishna</h1>
+</div>
 
-  <section class="hero">
-    <h1 class="title">Creative Developer</h1>
-    <p class="subtitle">Building Smooth Experiences</p>
-    <button class="cta">Explore</button>
-  </section>
+<nav class="navbar">
+<div class="logo">Krishna</div>
+<ul>
+<li>Home</li>
+<li>About</li>
+<li>Projects</li>
+<li>Contact</li>
+</ul>
+</nav>
 
-  <section class="features">
-    <div class="card">Fast</div>
-    <div class="card">Modern</div>
-    <div class="card">Animated</div>
-  </section>
+<section class="hero">
+<h1 class="title">Build Amazing Websites</h1>
+<p class="subtitle">Smooth. Fast. Animated.</p>
+<button class="btn">Explore</button>
+</section>
 
-<script>
-gsap.registerPlugin(ScrollTrigger);
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+<div class="circle c3"></div>
 
-// Hero Animation
-gsap.from(".title", {
-  y: -100,
-  opacity: 0,
-  duration: 1.2,
-  ease: "power4.out"
-});
-
-gsap.from(".subtitle", {
-  y: 50,
-  opacity: 0,
-  duration: 1,
-  delay: 0.3
-});
-
-gsap.from(".cta", {
-  scale: 0,
-  duration: 0.8,
-  delay: 0.6
-});
-
-// Scroll Animation
-gsap.utils.toArray(".card").forEach(card => {
-  gsap.from(card, {
-    scrollTrigger: {
-      trigger: card,
-      start: "top 80%",
-    },
-    y: 100,
-    opacity: 0,
-    duration: 1
-  });
-});
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="learn.js"></script>
 </body>
 </html>
