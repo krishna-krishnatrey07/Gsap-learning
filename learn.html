@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Krishna GSAP Site</title>
-<link rel="stylesheet" href="learn.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <meta charset="UTF-8">
+  <title>GSAP Modern Landing</title>
+  <link rel="stylesheet" href="learn.css">
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
-<div class="loader">
-<h1>Welcome Krishna</h1>
-</div>
-
-<nav class="navbar">
-<div class="logo">Krishna</div>
-<ul>
-<li>Home</li>
-<li>About</li>
-<li>Projects</li>
-<li>Contact</li>
-</ul>
+<nav class="nav">
+  <div class="logo">Krishna.dev</div>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Work</li>
+    <li>Contact</li>
+  </ul>
 </nav>
 
 <section class="hero">
-<h1 class="title">Build Amazing Websites</h1>
-<p class="subtitle">Smooth. Fast. Animated.</p>
-<button class="btn">Explore</button>
+  <h1 class="hero-title">Build Amazing Experiences</h1>
+  <p class="hero-sub">Powered by GSAP Animations</p>
+  <button class="hero-btn">Explore</button>
 </section>
 
-<div class="circle c1"></div>
-<div class="circle c2"></div>
-<div class="circle c3"></div>
+<section class="section">
+  <h2 class="section-title">Smooth Animations</h2>
+  <div class="cards">
+    <div class="card">Fast</div>
+    <div class="card">Modern</div>
+    <div class="card">Creative</div>
+  </div>
+</section>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<section class="section dark">
+  <h2 class="section-title">Scroll Effects</h2>
+  <p class="section-text">
+    Beautiful scroll-triggered animations using GSAP ScrollTrigger.
+  </p>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Krishna GSAP Project</p>
+</footer>
+
 <script src="learn.js"></script>
 </body>
 </html>
